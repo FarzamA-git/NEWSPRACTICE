@@ -24,7 +24,7 @@ const News =(props)=>{
   
   useEffect(() => {
       updateNews(page)
-  }, []);
+  }, [page, updateNews]);
 
   const fetchMoreData = async () => {
     const nextPage = page + 1;
